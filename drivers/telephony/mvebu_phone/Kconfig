@@ -1,0 +1,14 @@
+menu "Marvell Telephony options"
+	depends on MVEBU_PHONE
+
+config MV_TDM_EXT_STATS
+	bool "Enable legacy TDM extended statistics"
+	depends on MACH_ARMADA_38X
+	default y
+	---help---
+	Choosing this option will export
+	extended statistics to procfs.
+	This is relevant only for the
+	legacy TDM unit.
+
+endmenu
