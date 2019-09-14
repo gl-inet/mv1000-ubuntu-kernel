@@ -163,7 +163,7 @@
 			sdhci1: sdhci@d0000 {
 				wp-inverted;
 				bus-width = <4>;
-				cd-gpios = <&gpionb 3 GPIO_ACTIVE_LOW>;
+				cd-gpios = <&gpionb 17 GPIO_ACTIVE_LOW>;
 				no-1-8-v;
 				vqmmc-supply = <&vcc_sd_reg1>;
 				marvell,pad-type = "sd";
