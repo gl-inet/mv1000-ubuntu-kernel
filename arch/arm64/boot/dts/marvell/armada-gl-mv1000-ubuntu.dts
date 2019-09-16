@@ -1,0 +1,43 @@
+/*
+ * Device Tree file for GL-MV1000 board
+ */
+
+#include "armada-3720-community.dts"
+
+/ {
+	model = "GL.inet GL-MV1000 (Marvell)";
+	compatible = "marvell,espressobin-rev7", "marvell,armada-3720-community", "marvell,armada3720", "marvell,armada3710";
+};
+
+&spi0 {
+        status = "okay";
+
+        flash@0 {
+                reg = <0>;
+                compatible = "jedec,spi-nor";
+                spi-max-frequency = <104000000>;
+                m25p,fast-read;
+                partitions {
+                        compatible = "fixed-partitions";
+                        #address-cells = <1>;
+                        #size-cells = <1>;
+
+                        partition@0 {
+                                label = "u-boot";
+                                reg = <0 0xf0000>;
+                        };
+
+                        partition@f0000 {
+                                label = "u-boot-env";
+                                reg = <0Xf0000 0x8000>;
+                        };
+
+                        art: partition@f8000 {
+                                label = "art";
+                                reg = <0xf8000 0x8000>;
+                        };
+
+               };
+        };
+};
+

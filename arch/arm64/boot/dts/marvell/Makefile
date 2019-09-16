@@ -34,6 +34,7 @@ dtb-$(CONFIG_ARCH_MVEBU) += armada-8040-db-E.dtb
 dtb-$(CONFIG_ARCH_MVEBU) += armada-8040-mcbin.dtb
 dtb-$(CONFIG_ARCH_MVEBU) += armada-8040-ocp.dtb
 dtb-$(CONFIG_ARCH_MVEBU) += armada-80x0-customer.dtb
+dtb-$(CONFIG_ARCH_MVEBU) += armada-gl-mv1000-ubuntu.dtb
 
 always		:= $(dtb-y)
 subdir-y	:= $(dts-dirs)
