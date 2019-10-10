@@ -205,7 +205,6 @@
 				   compatible = "marvell,armada3700-neta";
 				   reg = <0x30000 0x4000>;
 				   interrupts = <GIC_SPI 42 IRQ_TYPE_LEVEL_HIGH>;
-				   mac-address = [00 50 43 01 02 03];
 				   clocks = <&sb_periph_clk 8>;
 				   status = "disabled";
 			};
