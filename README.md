@@ -3,7 +3,7 @@
 
 ```
 cd ~/mv1000-ubuntu/
-git clone git@gitlab.com:gl.router/gl-mv1000-product/ubuntu-kernel.git ubuntu-kernel
+git clone https://github.com/gl-inet/mv1000-ubuntu-kernel.git ubuntu-kernel
 ```
 
 ## Setup toolchan:
