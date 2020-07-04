@@ -1,3 +1,8 @@
+## Prepare the build environment:
+
+```sh
+sudo apt-get install -y libmnl-dev libelf-dev build-essential pkg-config bc git
+```
 
 ## Get kernel source:
 
